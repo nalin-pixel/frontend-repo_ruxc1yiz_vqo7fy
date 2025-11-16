@@ -20,7 +20,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="how" className="relative bg-[#0b0f14] text-white py-20">
+    <section id="how" className="relative bg-white text-gray-900 py-20">
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid md:grid-cols-3 gap-6">
           {features.map((f, i) => (
@@ -30,14 +30,14 @@ export default function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-100px' }}
               transition={{ delay: 0.1 * i }}
-              className="relative group rounded-2xl border border-white/10 bg-white/5 p-6 overflow-hidden"
+              className="relative group rounded-2xl border border-gray-200 bg-white p-6 overflow-hidden shadow-sm"
             >
               <div className={`pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-gradient-to-br ${f.accent} mix-blend-overlay`} />
               <div className="relative">
                 <h3 className="text-xl font-semibold">{f.title}</h3>
-                <p className="mt-2 text-white/80">{f.description}</p>
+                <p className="mt-2 text-gray-600">{f.description}</p>
               </div>
-              <div className="absolute -inset-px opacity-0 group-hover:opacity-100 transition shadow-[0_0_80px_20px_rgba(255,255,255,0.15)] rounded-2xl" />
+              <div className="absolute -inset-px opacity-0 group-hover:opacity-100 transition shadow-[0_0_80px_20px_rgba(16,185,129,0.15)] rounded-2xl" />
             </motion.div>
           ))}
         </div>
