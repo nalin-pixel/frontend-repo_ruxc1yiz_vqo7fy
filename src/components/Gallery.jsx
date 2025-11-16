@@ -14,7 +14,8 @@ export default function Gallery() {
     <section className="bg-[#0b0f14] py-20">
       <div className="mx-auto max-w-6xl px-6">
         <h2 className="text-white text-2xl md:text-3xl font-semibold mb-6">Inspiration</h2>
-        <div className="columns-1 sm:columns-2 md:columns-3 gap-4 [column-fill:_balance]"><!-- masonry -->
+        {/* masonry */}
+        <div className="columns-1 sm:columns-2 md:columns-3 gap-4 [column-fill:_balance]">
           {cards.map((c, i) => (
             <motion.div
               key={i}
